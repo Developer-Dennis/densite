@@ -4,7 +4,7 @@
   <div class="box">
     <h1 style="text-align:center; padding-top:10px">My Skills</h1>
       <ul>
-          <li v-for="skill in skills">
+          <li v-for="skill in skills" :key="skill">
           <div class="lang">{{skill.lang}}</div>
 
           <div class="bar">
