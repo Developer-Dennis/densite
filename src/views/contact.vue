@@ -4,19 +4,19 @@
       <form  id="contact" action="mailto:denkogei24@gmail.com" method="post" enctype="text/plain" >
         <h4>Contact us for custom quote</h4>
         <fieldset>
-          <input placeholder="Full Name" type="text" name="Firstname" tabindex="1" required autofocus>
+          <input placeholder="Full Name" name="fullname"  type="text" tabindex="1" required autofocus>
         </fieldset>
         <fieldset>
-          <input placeholder=" Email Address" type="text" name="Email" tabindex="2" required>
+          <input placeholder=" Email Address" name="Email" type="text" tabindex="2" required>
         </fieldset>
         <fieldset>
-          <input placeholder=" Phone Number (optional)" type="tel" tabindex="3" >
+          <input placeholder=" Phone Number (optional)" name="phonenumber" type="tel" tabindex="3" >
         </fieldset>
         <fieldset>
-          <textarea placeholder="Type your message here...." type="text" name="message" tabindex="5" required></textarea>
+          <textarea placeholder="Type your message here...." name="message" type="text" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-          <input type="submit" name="submit" value="submit" onclick="sendEmail()">
+          <button  type="submit"  value="submit" id="contact-submit" data-submit="...Sending" onclick="sendEmail()">Submit</button>
         </fieldset>
       </form>
     </div>
