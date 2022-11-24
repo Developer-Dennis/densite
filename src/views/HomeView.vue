@@ -1,8 +1,8 @@
 <template>
         <div class='home'>
            <img :src="image" />
-            <h1 class='desc'>Hi Am Dennis Kemboi,</h1>
-            <p class='paragraph'>  IT Graduate, Web Developer,Designer, Twitter Strategist</p>
+            <h1 class='desc'><b>Hi Am Dennis Kemboi,</b></h1>
+            <p class='paragraph'><b>  IT Graduate, Web Developer,Web Designer, Twitter Strategist</b></p>
         </div>
 </template>
 
