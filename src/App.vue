@@ -1,10 +1,16 @@
 <template>
+  <div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
+<div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
+<div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
+<div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
   <nav>
+    <div class="nav-link">
     <router-link to="/">Dennis Kemboi</router-link> 
     <router-link to="/about">About Me</router-link>
     <router-link to="/skills">Skills</router-link> 
     <router-link to="/projects">Projects</router-link>
     <router-link to="/contact">Contact</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -37,5 +43,24 @@ nav a {
 
 nav a.router-link-exact-active {
   color: yellow;
+}
+
+
+@media only screen and (max-width:500px){
+  .nav{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 8px;
+  }
+  .nav-links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: -100%;
+        transition: 0.5s all;
+    }
 }
 </style>
