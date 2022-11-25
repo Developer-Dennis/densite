@@ -10,7 +10,21 @@
     </div>
   </nav>
   <router-view/>
+  <Footer />
 </template>
+
+
+<script>
+import Footer from  './views/footer.vue'
+
+export default {
+  name: "myApp",
+  components: {
+    Footer
+  }
+}
+
+</script>
 
 <style>
 #app {
@@ -18,7 +32,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
-  color: #2c3e50;
+  color: black;
 }
 *{
   margin: 0;
@@ -27,7 +41,7 @@
 nav {
   display: flex;
   align-items: right;
-  background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+  background: linear-gradient(45deg, #9c0e9c, midnightblue);
   padding: 15px;
 }
 
@@ -49,6 +63,9 @@ nav a.router-link-exact-active {
     width: 100%;
     height: 120px;
     margin-bottom: 8px;
+    padding: 0px;
+    float: right;
+    display: block;
   }
   .nav-links{
         display: flex;
