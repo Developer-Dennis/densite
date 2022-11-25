@@ -35,6 +35,9 @@ export default {
     float: left;
     margin-bottom: 0;
 }
+.home h1{
+  padding-top:100px;
+}
 
 div .options{
   display: flex;
@@ -61,8 +64,11 @@ div .options{
     align-items: top;
     font-size: 50px;
 }
+.desc h1{
+  padding-top: 200px;
+}
 .paragraph{
-    margin-top: 55px; 
+    margin-top: 80px; 
     padding-left: 40px;
     display: flex;
     justify-content: center;
