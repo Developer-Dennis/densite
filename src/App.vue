@@ -57,24 +57,5 @@ nav a.router-link-exact-active {
 }
 
 
-@media only screen and (max-width:500px){
-  .nav{
-    position: relative;
-    width: 100%;
-    height: 120px;
-    margin-bottom: 8px;
-    padding: 0px;
-    float: right;
-    display: block;
-  }
-  .nav-links{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        left: -100%;
-        transition: 0.5s all;
-    }
-}
+
 </style>
