@@ -76,7 +76,23 @@ export default {
   margin-right: 30px;
 }
 
-@media  screen and (max-width:620px) {
+
+
+  @media screen and (min-width:600px) {
+    .contain{
+      max-width: 100%;
+      width: 1000px;
+    }
+  }
+
+
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:none;
+}
   .card{
     width: 40%;
   }
@@ -89,8 +105,8 @@ export default {
   }
   .card{
     width: 80%;
-    
+
   }
-}
+
 
 </style>
