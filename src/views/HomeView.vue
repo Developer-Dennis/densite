@@ -3,7 +3,10 @@
            <img :src="image" />
             <h1 class='desc'><b>Hi Am Dennis Kemboi,</b></h1>
             <p class='paragraph'><b>  IT Graduate, Web Developer,Web Designer, Twitter Strategist</b></p>
-        </div>
+            <div className="options">
+                <a  className='resume' href="https://drive.google.com/file/d/1xnRb1kGJIM6-BkDtQpL8FvM-ySg4u8Na/view?usp=sharing" target="_blank">Download Resume</a>
+            </div>
+       </div>
 </template>
 
 <script>
@@ -38,7 +41,6 @@ export default {
 .home h1{
   padding-top:100px;
 }
-
 div .options{
   display: flex;
   align-items: center;
@@ -53,6 +55,23 @@ div .options{
   background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
   text-decoration: none;
   padding: 25px;
+  margin-top: 25px;
+}
+div .options{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  margin-left: 50%;
+  
+}
+.options a {
+  display: inline-block;
+  color: #eee;
+  background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 20px;
   margin-top: 25px;
 }
 
@@ -111,13 +130,6 @@ div .options{
     margin-left: 0;
     padding: 0;
     border-radius: 5px;
-    
-  }
-  .options .hire {
-    margin:0;
-    padding-left: 50px;
-    width:whatever; 
-    margin:0 auto;
   }
   .options .resume{
     margin:0;
