@@ -1,10 +1,10 @@
 <template>
-  
   <nav>
     <div class="nav-link">
     <router-link to="/">Dennis Kemboi</router-link> 
     <router-link to="/about">About Me</router-link>
     <router-link to="/skills">Skills</router-link> 
+    <router-link to="/services">Services</router-link>
     <router-link to="/projects">Projects</router-link>
     <router-link to="/contact">Contact</router-link>
     </div>
@@ -57,5 +57,11 @@ nav a.router-link-exact-active {
 }
 
 
-
+@media (min-width: 600px){
+  nav{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 </style>
