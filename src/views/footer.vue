@@ -3,7 +3,7 @@
       <p>Copyright © 2022 <a href="#">Dennis Kemboi</a> All rights reserved</p>
       <a href="https://www.github.com/Developer-Dennis" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.facebook.com/DENKOGEI" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.twitter.com/DEN_KOGEI" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.twitter.com/DENKOGEI" target="_blank"><i class="fa-brands fa-twitter"></i></a>
       <a href="https://wa.me/254724554147" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
      </footer>
 </template>
