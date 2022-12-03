@@ -4,7 +4,7 @@ import About from  '../views/AboutView.vue'
 import Skills from '../views/skills.vue'
 import Projects from '../views/projects.vue'
 import Contact from '../views/contact.vue'
-
+import Services from '../views/services.vue'
 
 const routes = [
   {
@@ -21,6 +21,11 @@ const routes = [
     path: '/skills',
     name: 'skills',
     component: Skills
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: Services
   },
   {
     path: '/projects',
