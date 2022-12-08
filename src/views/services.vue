@@ -27,7 +27,7 @@ export default {
   data(){
     return{
       image1:  "./img/image1.jpg",
-      image2:  "./img/image2.jpg",
+      image2:  "./img/image2.jpeg",
       image3:  "./img/image3.jpg",
     }
   }
@@ -44,15 +44,16 @@ h1{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-
-.servicesimage{
-    height:350px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 1px solid #444;
+.row{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 150px;
 }
-.row .servicesimage img{
+
+.column img{
+    height:250px;
+}
+.row .column .servicesimage img{
     margin-top: 90px;
     position: relative; 
     float: left;
@@ -64,11 +65,10 @@ figcaption{
 }
 figure .row  .heading {
     font-size: 30px;
-    padding-left: 20px;
     padding-top:30px;
 }
 figure .row .column .text{
-    padding-top:30px;
+    padding-top:5px;
     font-size: 18px;
     padding-left: 10px;
 }
@@ -85,6 +85,7 @@ figure .row .column .text{
     flex: 33.33%;
     padding: 5px;
     height:100%;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width:500px){
