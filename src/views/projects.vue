@@ -45,22 +45,33 @@ export default {
 </script>
 
 <style>
-  .card{
-    width: 100%;
-    height: 100%;
-    float: left;
-  }
- #leftbox{
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  #middlebox{
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  #rightbox{
-    margin-left: 30px;
-    margin-right: 30px;
-  }
+      .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+#leftbox {
+  float:left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#middlebox{
+  padding: 20px;
+  float:left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#rightbox{
+  float:right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 
 </style>
