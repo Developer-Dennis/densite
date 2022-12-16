@@ -40,4 +40,17 @@ export default {
   footer p a{
     color: whitesmoke;
   }
+  @media screen and(min-width: 500){
+    footer{
+      width: 100%;
+    }
+    footer i{
+      font-size: 14px;
+      padding: 0px;
+      display: inline 
+    }
+    footer p{
+      font-size: 14px;
+    }
+  }
 </style>
