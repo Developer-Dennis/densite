@@ -72,4 +72,30 @@ ul li{
   height: 30px;
   line-height: 30px;
 }
+
+@media screen and (max-width:500px){
+ul li{
+  list-style-type: none;
+  padding: 2px;
+}
+.lang{
+  margin: 0px;
+  font-size: 16px;
+}
+.bar{
+  width: 100%;
+  background: #dfdfdf;
+  overflow: hidden;
+  padding: 0px;
+}
+.progress{
+  float: left;
+  padding: 20px;
+}
+  .box{
+    margin: 0px;
+    padding: 0px;
+    width: 370px;
+  }
+}
 </style>                    
