@@ -1,31 +1,24 @@
 <template>
-  <div class="container">
-    <h2 style="font-size:28px;padding:10px;">My Projects</h2>
-    <div class="card" style="float:left;">
-      <div id = "leftbox">
-        <img :src="image" alt="buyvitu" style="width:100%" />
-          <a :href="buyvitu" style="text-decoration:none;color:black; font-size: 20px; color:#9c0e9c;">Buy Vitu</a> 
-          <p  style="font-size:18px">Buy vitu is a web application which is used to sell second hand phones where a seller can post image,description,price,location and contact details and they buyer can check the phone if he/she likes it he/she can contact the seller. The languages i used are Express js,Ejs,Mysql</p> 
-    </div>
-    </div>
-
-    <div class="card" style="float:left;">
-      <div id = "middlebox">
-        <img :src="image1" alt="Tyds" style="width:100%" />
-          <a :href="Tyds" style="text-decoration:none;color:#9c0e9c;;font-size: 20px;">Tidings</a>  
-          <p  style="font-size:18px">Tyds is a social media web application that allows users to create account,sign in and post tyds which is text. The languages i used are Express js,Ejs,Mysql</p> 
-        
-      </div>
-    </div>
-
-    <div class="card" style="float:left;">
-      <div id = "rightbox">
-        <img :src="image2" alt="notesapp" style="width:100%" />
-          <a :href="NotesApp" style="text-decoration:none;color:black;font-size: 20px;color:#9c0e9c;">NotesApp</a> 
-          <p style="font-size:18px">Notes app is a web application that enable a user create an account sign in create a note edit,delete and its secure since you cannot see other users notes. The languages i used are Express js,Ejs,Mysql</p> 
-      </div>
-    </div>
-  </div>
+  <h1 className='services'>Services We Offer</h1>
+   <figure>
+        <div class="row">
+            <div class="column">
+                <img class="serviceimage" :src="image" alt="web development" style="width:100%;" />
+                <figcaption className='heading'><b><a :href="buyvitu" style="text-decoration:none;color:black; font-size: 20px; color:#9c0e9c;">Buy Vitu</a> </b></figcaption>
+                <figcaption className='text'>Buy vitu is a web application which is used to sell second hand phones where a seller can post image,description,price,location and contact details and they buyer can check the phone if he/she likes it he/she can contact the seller. The languages i used are Express js,Ejs,Mysql</figcaption>
+            </div>
+            <div class="column">
+                    <img class="serviceimage" :src="image1" alt="web design" style="width:100%" />
+                <figcaption className='heading'><b><a :href="buyvitu" style="text-decoration:none;color:black; font-size: 20px; color:#9c0e9c;">Notes App</a> </b></figcaption>
+                <figcaption  className='text'>Tyds is a social media web application that allows users to create account,sign in and post tyds which is text. The languages i used are Express js,Ejs,Mysql</figcaption>
+            </div>
+            <div class="column">
+                    <img class="serviceimage" :src="image2" alt="Twitter marketting" style="width:100%" />
+                <figcaption className='heading'><b><a :href="buyvitu" style="text-decoration:none;color:black; font-size: 20px; color:#9c0e9c;">Tyds</a> </b></figcaption>
+                <figcaption className='text'>Notes app is a web application that enable a user create an account sign in create a note edit,delete and its secure since you cannot see other users notes. The languages i used are Express js,Ejs,Mysql</figcaption>
+            </div>
+        </div>
+</figure>
 </template>
 
 <script>
@@ -45,33 +38,110 @@ export default {
 </script>
 
 <style>
-      .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
+
+
+h1{
+    text-align: center;
 }
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.services{
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.container {
-  padding: 2px 16px;
-}
-#leftbox {
-  float:left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-#middlebox{
-  padding: 20px;
-  float:left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-#rightbox{
-  float:right;
-  margin-left: 10px;
-  margin-right: 10px;
+.row{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 150px;
 }
 
+.column img{
+    height:250px;
+}
+.row .column .servicesimage img{
+    margin-top: 90px;
+    position: relative; 
+    float: left;
+    padding-top: 10px;
+}
+figcaption{
+    margin-top: 10px; 
+
+}
+figure .row  .heading {
+    font-size: 30px;
+    padding-top:30px;
+}
+figure .row .column .text{
+    padding-top:5px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.btn{
+      padding: 20px;
+      color:rebeccapurple;
+      font-size: 25px;
+      display: inline-block;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 33.33%;
+    padding: 5px;
+    height:100%;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:500px){
+    h1{
+    text-align: center;
+}
+.services{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.column img{
+    height:170px;
+    width: 100%;
+}
+.row .column .servicesimage img{
+    margin-top: 90px;
+    padding-top: 10px;
+}
+figcaption{
+    margin-top: 10px; 
+
+}
+figure .row  .heading {
+    font-size: 30px;
+    padding-top:30px;
+}
+figure .row .column .text{
+    padding-top:5px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.btn{
+      padding: 20px;
+      color:rebeccapurple;
+      font-size: 25px;
+      display: inline-block;
+}
+.row {
+    display: flex;
+}
+.column {
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+}
 
 </style>
